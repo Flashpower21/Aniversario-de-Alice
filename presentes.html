@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestões de Presentes - Alice Sonally</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --cor-principal: #800000;
+            --cor-fundo-claro: #FFFFFF; 
+            --cor-manual-fundo: #f7e0e0;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', serif;
+            background-color: var(--cor-manual-fundo);
+            text-align: center;
+        }
+
+        .container-presentes {
+            max-width: 500px;
+            margin: 0 auto;
+            border: 5px solid var(--cor-principal);
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            padding-bottom: 50px;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Topo com seta */
+        .topo-presentes {
+            position: relative;
+            background-color: var(--cor-manual-fundo);
+            padding: 40px 20px 10px;
+        }
+
+        .voltar {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+            color: var(--cor-principal);
+            font-size: 1.8em;
+        }
+
+        .titulo-presentes {
+            font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+            color: var(--cor-principal);
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .subtitulo {
+            color: var(--cor-principal);
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        /* Lista de presentes sem fundo */
+        .presentes-lista {
+            margin-top: 40px;
+            padding: 0 30px;
+        }
+
+        .presente-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 25px auto;
+            max-width: 380px;
+        }
+
+        .presente-icone {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background-color: var(--cor-principal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .presente-icone i {
+            font-size: 1.6em;
+        }
+
+        .presente-texto {
+            color: var(--cor-principal);
+            font-weight: bold;
+            font-size: 1.1em;
+            text-align: left;
+            line-height: 1.3;
+        }
+
+        /* Botão voltar */
+        .botao-voltar {
+            display: inline-block;
+            margin-top: 40px;
+            background-color: var(--cor-principal);
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.2s;
+        }
+
+        .botao-voltar:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 500px) {
+            .titulo-presentes { font-size: 2.2em; }
+            .presente-item { max-width: 90%; }
+            .presente-icone { width: 50px; height: 50px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-presentes">
+    
+    <div class="topo-presentes">
+        <a href="index.html" class="voltar"><i class="fas fa-arrow-left"></i></a>
+        <h1 class="titulo-presentes">Sugestões de Presentes</h1>
+        <p class="subtitulo">Se quiser me presentear 💝</p>
+    </div>
+
+    <div class="presentes-lista">
+        <div class="presente-item">
+            <div class="presente-icone">
+                <i class="fas fa-shirt"></i>
+            </div>
+            <div class="presente-texto">
+                Blusas – Tamanho M
+            </div>
+        </div>
+
+        <div class="presente-item">
+            <div class="presente-icone">
+                <i class="fas fa-person-dress"></i>
+            </div>
+            <div class="presente-texto">
+                Shorts – Tamanho 40
+            </div>
+        </div>
+
+        <div class="presente-item">
+            <div class="presente-icone">
+                <i class="fas fa-shoe-prints"></i>
+            </div>
+            <div class="presente-texto">
+                Calçados – Tamanho 36
+            </div>
+        </div>
+
+        <div class="presente-item">
+            <div class="presente-icone">
+                <i class="fas fa-gem"></i>
+            </div>
+            <div class="presente-texto">
+                Acessórios – Prata
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html" class="botao-voltar">
+        <i class="fas fa-arrow-left"></i> Voltar ao Convite
+    </a>
+</div>
+
+</body>
+</html>
